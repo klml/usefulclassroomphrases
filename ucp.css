@@ -30,6 +30,7 @@ textarea { height: 200px; }
 img.left { float:left;margin:0 5px 5px 0;}
 img.right { float:right;margin:0 5px 0 5px;}
 .depot, /* is for htmlsnippets moved and used by JS */
+.none,
 .hidden { display: hidden; }
 .alerta, .notice {color:red;text-transform:uppercase;}
 .row2 dl dt {float: left;font-weight: bold;width: 150px;} /* 2-column  .row2 is above if you use not changable markup like markdown etc */

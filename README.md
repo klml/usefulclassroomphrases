@@ -13,3 +13,14 @@ Just copy these classes to your css and remove what you don't want
 
 Do you have improvements, just write me or pullrequest.
 This version is english, like css. But I think of language translations.
+
+
+## special
+
+panel
+: panel is for middled fixed width websites
+
+row2
+: to have a not html-tabled 2-column table with an definiton list
+: class row2 is above if you use not changable markup like markdown etc 
+
