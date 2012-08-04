@@ -17,6 +17,11 @@ This version is english, like css. But I think of language translations.
 
 ## special
 
+ul
+
+: ul has no list-style but this image ![bullet](data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs)
+
+
 panel
 : panel is for middled fixed width websites
 
