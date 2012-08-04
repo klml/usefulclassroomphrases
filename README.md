@@ -19,13 +19,11 @@ This version is english, like css. But I think of language translations.
 
 ul
 
-: ul has no list-style but this [bullet image]("data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs")
-
+: ul has no list-style but a bullet image
 
 panel
 : panel is for middled fixed width websites
 
 row2
 : to have a not html-tabled 2-column table with an definiton list
-: class row2 is above if you use not changable markup like markdown etc 
-
+: class row2 is above if you use not changable markup like markdown etc
