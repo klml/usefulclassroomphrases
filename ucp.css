@@ -1,0 +1,36 @@
+/* standards needs to changed in 98%, if not delete this section */
+body { font:normal 12px Arial, Helvetica; background: url('example_body_bg.png*) repeat-x top left #F6F6F6 ;margin: 0; padding: 0, outline: none;}
+a { 
+}
+a:hover {
+}
+img { border:none; }
+ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs'); }
+h1,h2,h3,h4,h5,h6{padding:0; margin:0;}
+h1{color:#000; font-size: 130%; }
+h2{color:#000; font-size: 120%; }
+h3{color:#000; font-size: 115%; }
+h4{color:#000; font-size: 110%; }
+h5{color:#000; font-size: 105%; }
+h6{color:#000; font-size: 105%; }
+p {margin: 0 0 10px 0;}
+hr {color:#000;background-color:#000;height:1px;margin: 0 0 2px 0;}
+td{vertical-align: text-top;}
+input, textarea, select { width: 350px; }
+textarea { height: 200px; }
+/* proportion */
+#panel {margin: 0 auto; width: 956px;background-color:#fff;} //middled fixed width 
+
+/* useful class-room phrases */
+.clear,
+.cb { clear:both; }
+.left { float:left;}
+.right { float:right;}
+.none { float: none !important;}
+img.left { float:left;margin:0 5px 5px 0;}
+img.right { float:right;margin:0 5px 0 5px;}
+.depot, /* is for htmlsnippets moved and used by JS */
+.hidden { display: hidden; }
+.alerta, .notice {color:red;text-transform:uppercase;}
+.row2 dl dt {float: left;font-weight: bold;width: 150px;} /* 2-column  .row2 is above if you use not changable markup like markdown etc */
+.row2 dl dd {margin-bottom: 5px !important;}
