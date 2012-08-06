@@ -1,6 +1,6 @@
 /* standards needs to changed in 98%, if not delete this section */
 /* more on https://github.com/klml/usefulclassroomphrases */
-body { font:normal 12px Arial, Helvetica; background: url('example_body_bg.png*) repeat-x top left #F6F6F6 ;margin: 0; padding: 0, outline: none;}
+body { font:normal 12px Arial, Helvetica; background: url('example_body_bg.png') repeat-x top left #F6F6F6 ;margin: 0; padding: 0, outline: none;}
 a { 
 }
 a:hover {
