@@ -20,3 +20,4 @@ This version is english, like css. But I think of language translations.
 * **ul**: has no list-style but a bullet image
 * **panel**: is for middled fixed width websites
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
+* **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
