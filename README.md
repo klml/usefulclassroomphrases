@@ -1,9 +1,10 @@
 # useful class-room phrases
 
 useful css class-room phrases is a small selection for css classes used inside content areas.
-To have some self-explanatory and self-describable classes you can use writng text and reading
+To have some self-explanatory and self-describable classes you can use writng text and reading.
+Instead of writing ```style="float:right;margin:0 5px 0 5px;"``` every time.
 
-Its not useful to write every style with this. Its just for *not-general elements*.
+Its only useful **not-general elements**, not for general templating.
 
 Its a little bit against sense of CSS, but not so much against it than others;)
 
