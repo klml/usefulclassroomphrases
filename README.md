@@ -38,3 +38,9 @@ img.left { float:left;
 margin:0 11px 11px 0;
 }
 ```
+
+## licence
+
+There is no threshold of originality of this stuff, if not aeverything is under Public Domain.
+
+This means you can copy, modify, use it, resell it, even without naming this source (but it would be usful;)
