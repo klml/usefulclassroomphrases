@@ -22,3 +22,19 @@ This version is english, like css. But I think of language translations.
 * **panel**: is for middled fixed width websites
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
 * **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
+
+## overwrite
+
+I think its ok to change this few values and not to overwrite them. But you could *mark* changed parts with break in new lines
+
+Original
+``` css
+img.left { float:left;margin:0 5px 5px 0;}
+```
+
+Changed
+``` css
+img.left { float:left;
+margin:0 11px 11px 0;
+}
+```
