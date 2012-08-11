@@ -1,90 +1,54 @@
-icons (<img src="http://bit.umija.de/icon/tremija.png" alt="tremija.png" />) helfen vor allem bei links dem Auge recht gut anzuzeigen wo es hingehen soll. Mit ((howto:css|css)) kann man icons ohne überflüssige und aufwändige html-Elemente einbauen. Das Icon baut man am besten als Hintergrundgrafik und rückt den Text mit einem padding ein.
-
-{DIV(align=&gt;left, width=&gt;25%, float=&gt;right, class="umijabox")}{maketoc}{DIV}
-Auf [http://www.iconfinder.com|iconfinder.com] findet man noch mehr oder weniger sinnvolle icons.
+/* paylod */
+/* set if base64 icons. Please dont use the whole list, but just copy&paste single icons. */
 
 
-* Bei Listen ''li'' ziehe ich das sogar dem [http://de.selfhtml.org/css/eigenschaften/listen.htm#list_style_image|list-style-image] vor, da man so flexibler ist (z.B. kann so die Bulletgrafik auch [http://lotuslanguages.com|unter der Zeile] laufen) (heir auf ((umija:css)) noch nicht ;(
-* Links muss man nicht mal eine eigene class genen, sondern kann sich auf das target binden. ~np~a[href*="wikipedia.org"] {~/np~
-
-!Vektoren
-
-Vektoren sind meist kleiner als Grafiken und können skaliert werden. Leider kann man keine Vektordateien als background einbinden (?). [http://fortawesome.github.com/Font-Awesome/|Font-Awesome] liefert eine Webfont aus, die hat zwar 30KB (vs einzel icon ~ 1KB), und wird mit css <code>:before { content: "\f015"; }</code> vor das gewünschte Element gestellt.
-
-
-!Grafik einbinden
-Die gewünschte Grafik wird mit dem attribut ~np~url("http://example.com/img.png")~/np~ eingebunden. Hier gibt es zwei Methoden diese leichter einzubinden, anstatt jede Datei einzeln hochzuladen/hosten zu müssen.
-
-Beide Methoden bieten zusätzlich den Vorteil das der Browser weniger einzelne files laden muss  und so schneller wird, bei (fast) gleicher Datenmenge.
-
-!!sprites
-Bei sprites werden alle oder zumindest die wichtigsten icons in ein großes Bild zusammengefasst und dann im css mit [http://de.selfhtml.org/css/eigenschaften/hintergrund.htm#background_position|background-position] einzeln ausgewählt. Mehr dazu [http://matthiasschuetz.com/css-sprites-fuer-hintergrundbilder-richtig-verwenden|Sprites für Hintergrundbilder richtig verwenden].
-
-Ein [http://www.finaldesign.co.uk/blog/graphic-resources/icons/free-high-quality-icons.html|Beispiel]
-
-
-!!Base64
-Einzelne icons können mit ((p:Base64)) als ((p:Data-url)) encodet direct ins css eingebunden werden. Zum umrechnen
-
-* [http://www.base64converter.com|base64converter] zum Bild hochladen
-* [http://www.greywyvern.com/code/php/binary2base64|binary2base64] mit vorhanderen BildURL
-
-
-Das hat den zusätzliche Vorteil das man beim css Anpassen nur die Bild<del>dateien</del> codes rüberkopiert die man wirklich braucht. Und shcnell neue hinzufügen kann, ohne die ganze iconmap bearbeiten zu müssen
-
-!!!Ziele
-Ein paar Beispiele zum kopieren, die meisten 16x16 (welches icon kann man ja am Ziel sehen ;):
-{CODE()}
 /* puzzelball*/
 a[href^="http://de.wikipedia.org/wiki/"],
 a[href^="http://de.wikipedia.org/wiki/"]:hover {
-  background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/wAALCAAQABABAREA/8QAFgABAQEAAAAAAAAAAAAAAAAABQYH/8QAIxAAAgICAQQCAwAAAAAAAAAAAQMCEQQFAAYSITETcSJBQv/aAAgBAQAAPwDeN1LZt3icjFapOHJE0mZXMtX+XdIx/iPcBEdxv14u64Dm7vI0WxXlxdKS4sgt0Jtk35E3XdR9S82PqvXH+osbOxWRYnHdkqiwzWVTnYBuxMC7q/Aqq5LYXTew6g3ipZGIzD1UJwZkMav45vMSCIj9m6AJ8AC/rn//2Q%3D%3D) center right no-repeat !important;
-  padding: 0 18px 0 0 !important;
-  margin-right: 3px;
-  border-bottom: 1px solid #e8e8e8 ;
+background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/wAALCAAQABABAREA/8QAFgABAQEAAAAAAAAAAAAAAAAABQYH/8QAIxAAAgICAQQCAwAAAAAAAAAAAQMCEQQFAAYSITETcSJBQv/aAAgBAQAAPwDeN1LZt3icjFapOHJE0mZXMtX+XdIx/iPcBEdxv14u64Dm7vI0WxXlxdKS4sgt0Jtk35E3XdR9S82PqvXH+osbOxWRYnHdkqiwzWVTnYBuxMC7q/Aqq5LYXTew6g3ipZGIzD1UJwZkMav45vMSCIj9m6AJ8AC/rn//2Q==") center right no-repeat !important;
+padding: 0 18px 0 0 !important;
+margin-right: 3px;
+border-bottom: 1px solid #e8e8e8 ;
 }
-/* ueberkreuzte W */
+/* crossed W */
 a[href^="http://de.wikipedia.org/wiki/"],
 a[href^="http://de.wikipedia.org/wiki/"]:hover {
-  background: url("data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAB2ElEQVQokYWTIWiyURSGz/d9OhCVGYQhiMmiK2IZBoNN48C0IibBYhHBPFYMayLYTDImWAyCWC2aXBBxiDAETQYFDZ/3WRD91e3//xcu95yX94Fz4R5NKYWmaQKIiMix/tt9lKZpoovIhXnUb961tGKxeErd3d2J3W6X6XQqIiK3t7fi8/nk4+NDREQikYj0+30xTfMAlMtldF3H7Xbz9fXFdrvl5eUFEaFer7Pb7QiFQpRKJXa7Hb1eD8MwaLVaCEAmk0HXdUajEQDb7RaPx0MymWQymfDw8MB+vwfg/f2dRCIBcIBnsxlWq5VsNguAUorn52cMwyAej9NsNk9+NBql3W4fYKUUAE9PTzgcDlarFUoplsslNpsNr9eLaZoADAYDgsHgaYoT3Ov1EBFeX19RSrHf7wkEAui6zufnJwCpVIpKpcKREaUUxxMOh/H7/ZimydvbG7FYDMMwyOVyLBYLPB4P6/X6D8yZqtUqIkKj0SAYDDIej3l8fMTpdJLL5SgUCufxS3iz2eByuXC5XKTTaQC63S4igsViYTabXcLnYyulyOfz3NzcMJ1OT2+/v78nmUxynf0Bz+dzarXahdfpdBgOhz9gjV8+8XER/tfr/1qEa++6/wZgIgb2IPpLlQAAAABJRU5ErkJggg==") right 2px no-repeat !important;
-  padding: 0 18px 0 0 !important;
-  margin-right: 3px;
-  border-bottom: 1px solid #e8e8e8 ;
+background: url("data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAB2ElEQVQokYWTIWiyURSGz/d9OhCVGYQhiMmiK2IZBoNN48C0IibBYhHBPFYMayLYTDImWAyCWC2aXBBxiDAETQYFDZ/3WRD91e3//xcu95yX94Fz4R5NKYWmaQKIiMix/tt9lKZpoovIhXnUb961tGKxeErd3d2J3W6X6XQqIiK3t7fi8/nk4+NDREQikYj0+30xTfMAlMtldF3H7Xbz9fXFdrvl5eUFEaFer7Pb7QiFQpRKJXa7Hb1eD8MwaLVaCEAmk0HXdUajEQDb7RaPx0MymWQymfDw8MB+vwfg/f2dRCIBcIBnsxlWq5VsNguAUorn52cMwyAej9NsNk9+NBql3W4fYKUUAE9PTzgcDlarFUoplsslNpsNr9eLaZoADAYDgsHgaYoT3Ov1EBFeX19RSrHf7wkEAui6zufnJwCpVIpKpcKREaUUxxMOh/H7/ZimydvbG7FYDMMwyOVyLBYLPB4P6/X6D8yZqtUqIkKj0SAYDDIej3l8fMTpdJLL5SgUCufxS3iz2eByuXC5XKTTaQC63S4igsViYTabXcLnYyulyOfz3NzcMJ1OT2+/v78nmUxynf0Bz+dzarXahdfpdBgOhz9gjV8+8XER/tfr/1qEa++6/wZgIgb2IPpLlQAAAABJRU5ErkJggg==") right 2px no-repeat !important;
+padding: 0 18px 0 0 !important;
+margin-right: 3px;
+border-bottom: 1px solid #e8e8e8 ;
 }
 a[href^="http://www.facebook.com/"] {
-  background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwUG/8QAIhAAAgIBBQACAwAAAAAAAAAAAQMCBBEABQYSIRQyUVJh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AEGjybbPjQFmNVlgGQZJmDIy7EHOfc6t8sbV2bYkPmgIt2IxKyE9OkifAJft/NCO8ceevd7oZJkGB7CQa08g9ifxracxbZ5C7iVavuFq2UVkhyytkuzxL2RyPtjPp1WalQykHkGLDh2f/9k%3D) center right no-repeat !important;
-  padding: 0 20px 0 0 !important;
-  margin-right: 3px;
-  border-bottom: 1px solid #3b5998 ;
+background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwUG/8QAIhAAAgIBBQACAwAAAAAAAAAAAQMCBBEABQYSIRQyUVJh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AEGjybbPjQFmNVlgGQZJmDIy7EHOfc6t8sbV2bYkPmgIt2IxKyE9OkifAJft/NCO8ceevd7oZJkGB7CQa08g9ifxracxbZ5C7iVavuFq2UVkhyytkuzxL2RyPtjPp1WalQykHkGLDh2f/9k=") center right no-repeat !important;
+padding: 0 20px 0 0 !important;
+margin-right: 3px;
+border-bottom: 1px solid #3b5998 ;
 }
-#ca-edit a { /* for universaleditbutton.org*/
-  padding-left: 20px !important;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPklEQVQoz0XNzUuTcQDA8e/z7Jlzbj7T6fMst5Vv861S20tYEJq3LpEhdAlEOvcHCCWdC7p069qlQ9ckTEwjUeYqEzKwwr3o0rWhsj063dzz61DS9/7hK/Gi+zbwAAgAEkKAOMFj1+h0BficW0WRZIKNfSJeSMaTez8fK8Ak0P8fVNBsbga0IKlCCgXB4JkrFE8O2T3a7fO72h8qQAcg/UUmDbY6rnoiJPMJ4vkk132DGGWDaCZGRA9hU+znZMAEwKygWmu45rlMPB9nI59g2D9IoWwQzSwT1oM0VLtZya0K+fRQa63hXscdtg62SeQTDPuGKJQMYpllwnoIvVpjLv0B4+QIBTCplAjrYcYDo5TMMh1qC5lilljmI0EtiMeuMbM5h9fpw+vwISPEaxCJi/VdBGrP8jQywQ3fELHsF0LaJXS7zszmO3xOL33u8yTycSzcUo89jqZP93vGIv313aoiK7iqnHS62tkvHzCdmsbr8NHf2MtiJkbcSJdkKqWTu203ly64AglTCABanX7G2keoq1JpVdsIaf0s7ERJHW6DrGBh1Nu69GtR/WFsjXe52lSvXUeSJCqmSUBtpoLgVXyKdDELkgKSVFJqFLskLLae6fR7L5i5ZwOPtpJGWp/fiXq/7X1nIbtC7ngfZIV/SYpmq2/qre8uzO8sTcxuzq699Q9vPV9/Gf66tz4JtCBbBbLlFAggbREj7kajUnQcV0prRcThm8RU9e+jvQMUm4rF2owkl0GUQDoGNoAnfwB89+kRBnlS7wAAAABJRU5ErkJggg%3D%3D) no-repeat 1px 1px !important ;
+#ca-edit a { /* universaleditbutton.org*/
+padding-left: 20px !important;
+background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPklEQVQoz0XNzUuTcQDA8e/z7Jlzbj7T6fMst5Vv861S20tYEJq3LpEhdAlEOvcHCCWdC7p069qlQ9ckTEwjUeYqEzKwwr3o0rWhsj063dzz61DS9/7hK/Gi+zbwAAgAEkKAOMFj1+h0BficW0WRZIKNfSJeSMaTez8fK8Ak0P8fVNBsbga0IKlCCgXB4JkrFE8O2T3a7fO72h8qQAcg/UUmDbY6rnoiJPMJ4vkk132DGGWDaCZGRA9hU+znZMAEwKygWmu45rlMPB9nI59g2D9IoWwQzSwT1oM0VLtZya0K+fRQa63hXscdtg62SeQTDPuGKJQMYpllwnoIvVpjLv0B4+QIBTCplAjrYcYDo5TMMh1qC5lilljmI0EtiMeuMbM5h9fpw+vwISPEaxCJi/VdBGrP8jQywQ3fELHsF0LaJXS7zszmO3xOL33u8yTycSzcUo89jqZP93vGIv313aoiK7iqnHS62tkvHzCdmsbr8NHf2MtiJkbcSJdkKqWTu203ly64AglTCABanX7G2keoq1JpVdsIaf0s7ERJHW6DrGBh1Nu69GtR/WFsjXe52lSvXUeSJCqmSUBtpoLgVXyKdDELkgKSVFJqFLskLLae6fR7L5i5ZwOPtpJGWp/fiXq/7X1nIbtC7ngfZIV/SYpmq2/qre8uzO8sTcxuzq699Q9vPV9/Gf66tz4JtCBbBbLlFAggbREj7kajUnQcV0prRcThm8RU9e+jvQMUm4rF2owkl0GUQDoGNoAnfwB89+kRBnlS7wAAAABJRU5ErkJggg==") no-repeat 1px 1px !important ;
 }
-{CODE}
-Beim Icon für den [http://universaleditbutton.org|universaleditbutton.org] muss man natürlich seine eigene Editbutton, sofern voranden, einbinden.
 
-!!!Zieldokumente
-Beispiele aus dem Mediawikiskin Vector
-{CODE()}
+/* from Mediawiki-skin Vector */
+
 a.external,
- a[href ^="gopher://"] { background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC) center right no-repeat;
- padding-right:13px}
- }
-a[href ^="https://"] { background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeF6tjzsKg0AQhi09mimsFJLCzpNYCGKbK3gAtfUIljaCoKCCZIs8MMV2v+yCg8siWlh8zOtjhjEAEFmeIopDQtTrTJNEZIxhWysiNfULJFJjDzGnba/aBt4+wAuBzD+tg6a8SVkXf4GET96xmDxNzP39IvE/PPDtXIyVpYinv14A5F0laJ8oYFgAAAAASUVORK5CYII=) center right no-repeat;
-  padding-right:13px
+a[href ^='gopher://'] { background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC") center right no-repeat;
+padding-right:13px}
 }
-a[href ^="mailto:"] { background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF////////iIqF9vb26urpycfDvb275eXj2djV+/v4srKy6efio6GcqKejsa6q8fDtVM9qIQAAAAF0Uk5TAEDm2GYAAABOSURBVHheBcExDkAwGIDRL43NpJOt6a9hMdVilP8gklqsHMJmt4qeyeI03oNSNkCrAIU/7YTWbwp0zz4rTXZHxF/9YA15HTG4+4NFRNofUBMMOBBNZngAAAAASUVORK5CYII=) center right no-repeat;
-  padding-right:13px
+a[href ^="https://"] { background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeF6tjzsKg0AQhi09mimsFJLCzpNYCGKbK3gAtfUIljaCoKCCZIs8MMV2v+yCg8siWlh8zOtjhjEAEFmeIopDQtTrTJNEZIxhWysiNfULJFJjDzGnba/aBt4+wAuBzD+tg6a8SVkXf4GET96xmDxNzP39IvE/PPDtXIyVpYinv14A5F0laJ8oYFgAAAAASUVORK5CYII=") center right no-repeat;
+padding-right:13px
 }
-a[href ^="news://"]{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHtJREFUeF6NkEEKgCAQRT2w1wiiUxgk0SKiTe6i9oKeQXDhKSZmYAJRKeHh4j//DIp+6OAPJH6cXJRSZqSUQClViBjUKER8zXAbUhev+6Q7hMA0G1msNtIo5zxhrX3xzlNG4ravYMwBMUZsKsBsXjQIABCTHlsfTXuj8wCN3T2QBjtcwQAAAABJRU5ErkJggg==) center right no-repeat;
-  padding-right:13px
+a[href ^="mailto:"] { background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF////////iIqF9vb26urpycfDvb275eXj2djV+/v4srKy6efio6GcqKejsa6q8fDtVM9qIQAAAAF0Uk5TAEDm2GYAAABOSURBVHheBcExDkAwGIDRL43NpJOt6a9hMdVilP8gklqsHMJmt4qeyeI03oNSNkCrAIU/7YTWbwp0zz4rTXZHxF/9YA15HTG4+4NFRNofUBMMOBBNZngAAAAASUVORK5CYII=") center right no-repeat;
+padding-right:13px
 }
-a[href ^="ftp://"] { background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAExJREFUeF5VyEEKwCAMAMH83o/0LT6kFHqQYqkevG1jIITs3kaQgn+A7A29ujnw5NKrsaPCrTegBBrRMzYeXkbGzsdkZRwsPWMUmEd+CkSgVeVp2OkAAAAASUVORK5CYII=) center right no-repeat;
-  padding-right:13px
+a[href ^="news://"]{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHtJREFUeF6NkEEKgCAQRT2w1wiiUxgk0SKiTe6i9oKeQXDhKSZmYAJRKeHh4j//DIp+6OAPJH6cXJRSZqSUQClViBjUKER8zXAbUhev+6Q7hMA0G1msNtIo5zxhrX3xzlNG4ravYMwBMUZsKsBsXjQIABCTHlsfTXuj8wCN3T2QBjtcwQAAAABJRU5ErkJggg==") center right no-repeat;
+padding-right:13px
 }
-a[href ^="irc://"] { background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHRJREFUeF590E0KgCAQBWAvH0TXigI3ZccQ/8H91ExqKNrAW8j7kFG27SvMyzQM9s8whuBnENdQSllFKdWFWFC01pQQwhASMMaAtXYIMQScc/0dxSXyIaPq1ZzzF6JOsKBTHOC9hxgjoQLbf2tRgekWKka5AShBSepvauUSAAAAAElFTkSuQmCC) center right no-repeat;
-  padding-right:13px
+a[href ^="ftp://"] { background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAExJREFUeF5VyEEKwCAMAMH83o/0LT6kFHqQYqkevG1jIITs3kaQgn+A7A29ujnw5NKrsaPCrTegBBrRMzYeXkbGzsdkZRwsPWMUmEd+CkSgVeVp2OkAAAAASUVORK5CYII=") center right no-repeat;
+padding-right:13px
+}
+a[href ^="irc://"] { background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHRJREFUeF590E0KgCAQBWAvH0TXigI3ZccQ/8H91ExqKNrAW8j7kFG27SvMyzQM9s8whuBnENdQSllFKdWFWFC01pQQwhASMMaAtXYIMQScc/0dxSXyIaPq1ZzzF6JOsKBTHOC9hxgjoQLbf2tRgekWKka5AShBSepvauUSAAAAAElFTkSuQmCC") center right no-repeat;
+padding-right:13px
 }
 a[href $=".ogg"], a[href $=".OGG"],
 a[href $=".mid"], a[href $=".MID"],
@@ -92,62 +56,39 @@ a[href $=".midi"], a[href $=".MIDI"],
 a[href $=".mp3"], a[href $=".MP3"],
 a[href $=".wav"], a[href $=".WAV"],
 a[href $=".wma"], a[href $=".WMA"] {
-  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF////dX8qyNF7eYMzwsxrsr9G8PHrm6Jrt7uakJVmn6OB1duat8NQi5YzhI4ykZR07gQraQAAAAF0Uk5TAEDm2GYAAABJSURBVHheNcSxDUBQFIbR727glxvKl3dHsIHCGESrNIIR7KE1hQ1MoDSCiMhJDixSDWVEhuZbei/sf/Jqbdn28+jxYe4u7CaND+p5C05J6bE1AAAAAElFTkSuQmCC) center right no-repeat;
-  padding-right:13px
+background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF////dX8qyNF7eYMzwsxrsr9G8PHrm6Jrt7uakJVmn6OB1duat8NQi5YzhI4ykZR07gQraQAAAAF0Uk5TAEDm2GYAAABJSURBVHheNcSxDUBQFIbR727glxvKl3dHsIHCGESrNIIR7KE1hQ1MoDSCiMhJDixSDWVEhuZbei/sf/Jqbdn28+jxYe4u7CaND+p5C05J6bE1AAAAAElFTkSuQmCC") center right no-repeat;
+padding-right:13px
 }
 a[href $=".ogm"], a[href $=".OGM"],
 a[href $=".avi"], a[href $=".AVI"],
 a[href $=".mpeg"], a[href $=".MPEG"],
 a[href $=".mpg"], a[href $=".MPG"] {
-  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAP9bkSK1AAAAXElEQVR4Xi2NMQoFMQgFvbpgHUj5LvF6K7sFQXKFsOew2G/xuylmGPn62Wb76U+ayHsTbDnrQMNrHdkZRChyi730KvK1QUWVD47gzoCOMBkXPSZrIuumseW/iKU/eKdG9xXBa10AAAAASUVORK5CYII=) center right no-repeat;background:url(http://bits.wikimedia.org/skins-1.17/vector/images/video-icon.png?2011-02-12T21:25:00Z) center right no-repeat!ie;
-  padding-right:13px
+background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAP9bkSK1AAAAXElEQVR4Xi2NMQoFMQgFvbpgHUj5LvF6K7sFQXKFsOew2G/xuylmGPn62Wb76U+ayHsTbDnrQMNrHdkZRChyi730KvK1QUWVD47gzoCOMBkXPSZrIuumseW/iKU/eKdG9xXBa10AAAAASUVORK5CYII=") center right no-repeat;background:url(http://bits.wikimedia.org/skins-1.17/vector/images/video-icon.png?2011-02-12T21:25:00Z) center right no-repeat!ie;
+padding-right:13px
 }
 a[href $=".pdf"], a[href $=".PDF"],
 a[href *=".pdf#"], a[href *=".PDF#"],
 a[href *=".pdf?"], a[href *=".PDF?"] {
-  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeF5lykEKgDAMBdF/+17Es/QkiosiCBURXIzJooZohmweX6gwmkCeI+Oqc2C1FnvnF2ejlQYU0tLK2NjY6f/l8V12Ti7uhFFgDj19b58EwXuqkAAAAABJRU5ErkJggg==) center right no-repeat;background:url(http://bits.wikimedia.org/skins-1.17/vector/images/document-icon.png?2011-02-12T21:25:00Z) center right no-repeat!ie;padding-right:13px
+background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeF5lykEKgDAMBdF/+17Es/QkiosiCBURXIzJooZohmweX6gwmkCeI+Oqc2C1FnvnF2ejlQYU0tLK2NjY6f/l8V12Ti7uhFFgDj19b58EwXuqkAAAAABJRU5ErkJggg==") center right no-repeat;background:url(http://bits.wikimedia.org/skins-1.17/vector/images/document-icon.png?2011-02-12T21:25:00Z) center right no-repeat!ie;padding-right:13px
 }
-{CODE}
 
-!!!Spezielles
-{CODE()}
+/* specials */
+ol { list-style-image: url("data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs="); }
+.arrowrightblack { list-style-image: url("data:image/gif;base64,R0lGODlhAwAFAIABAAAAAP///yH5BAEKAAEALAAAAAADAAUAAAIFRG4YlgUAOw=="); }
+.arrowrightwhite { list-style-image: url("data:image/gif;base64,R0lGODlhAwAFAIAAAP///////yH5BAEKAAEALAAAAAADAAUAAAIFRG4YlgUAOw=="); }
+
+.transparentgif { list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
+
+/* companies */
 a[href^="notes:"], a[href^="Notes:"] {
- background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gOTUK/9sAQwACAQEBAQECAQEBAgICAgIEAwICAgIFBAQDBAYFBgYGBQYGBgcJCAYHCQcGBggLCAkKCgoKCgYICwwLCgwJCgoK/9sAQwECAgICAgIFAwMFCgcGBwoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK/8AAEQgAEAAQAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/VL43/tDeJdf+J+oeBdKvru0tdPW4a2tUuZLNbqOCEySTCXbiTkbSu4BBgkZqz8A/wBoPxBpnxRtvhxq2oXV5bXciRzwyTvdJa+aiNDJ5xGELlyPL3HIBYdDWj8df2SrjxL8QrzxzY39/wCRc6Hf2FtHZWwmFs90pV5CnDEgE8A4IxyMU/4C/sq3Phf4it44urq/FsbHS4rhL63EXmy2UCxJIqfeBbaGbPAyQCT0/nejg/ERcYqTUr+21ld8nsb3fly20Svs9uZH69UxPBL4X5U1z+y0jZ39rdLfba723Vr2P//Z") no-repeat scroll right center transparent ;
- border-bottom: 1px solid #F77102;
+background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gOTUK/9sAQwACAQEBAQECAQEBAgICAgIEAwICAgIFBAQDBAYFBgYGBQYGBgcJCAYHCQcGBggLCAkKCgoKCgYICwwLCgwJCgoK/9sAQwECAgICAgIFAwMFCgcGBwoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK/8AAEQgAEAAQAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/VL43/tDeJdf+J+oeBdKvru0tdPW4a2tUuZLNbqOCEySTCXbiTkbSu4BBgkZqz8A/wBoPxBpnxRtvhxq2oXV5bXciRzwyTvdJa+aiNDJ5xGELlyPL3HIBYdDWj8df2SrjxL8QrzxzY39/wCRc6Hf2FtHZWwmFs90pV5CnDEgE8A4IxyMU/4C/sq3Phf4it44urq/FsbHS4rhL63EXmy2UCxJIqfeBbaGbPAyQCT0/nejg/ERcYqTUr+21ld8nsb3fly20Svs9uZH69UxPBL4X5U1z+y0jZ39rdLfba723Vr2P//Z") no-repeat scroll right center transparent ;
+border-bottom: 1px solid #F77102;
 }
 a[href^="https://www.xing.com/"],
 a[href^="https://www.xing.com/"]:hover {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARRQTFRF6urqysrK+/v7tMYCtcoB7Ozs7e3t4eHh7u7u/fz3/Pz85+/xtckP6O2rtMgF091q1NTU8fHx9fn64Ozs8PDw5+6HzMzMy8vLvc8j9vjg0eXmz9tb5ubm2traJXt60NxW39/f9fjl5+fn4ODguswY0dHR+vru/fvu6fC8wc8x6enpsc/Pfq2nmr6iwtM1vdAn9/z4DGVzUpOZxthI1+Bz3umxHnh25vfvxNdApczLwNIwDWdw7/TM3ueMK3+BPYWEz9wb6/C6t8sRm8HEOIWLfK+ywNjatcy8ytlMrcUA8PS56eqM8/f21NsTqsnM4+mhRpKS6+vr8vLy9/f3+Pj49vb29PT0+vr68/Pz+fn59fX1AGZmw3bEdAAAASxJREFUeNpc0dVihDAURdFbHMbdXevu7i6EJJDw///RwMwwtOvlcDdvAJLECKV8iVLCJAkk7BHM3CWGiYddYIi4/xHEgBQx+8NkDBcJ5Lx4nG5t74uhOdB4LI9f5GRGLNfA5ljIH38E851OH/TEchsg7E8PP/cY11bls1pwchDdEQptv11w3uXkpRmcUXfWfX+jdyOfjJ2ok8Cpv7tZUu5S4UFEt8OeuPKvDz9fG+a826IL+Uf//LmkDFOLjzTvX0f+3s6bomTinVKaqNcTdNKRq7c0tOgz06TSibrqRSYZeZiaPapgAI1eXFTTDVMsXTMA6dz7j+sInOaAeyjO44OmAy7Ss10t9n+1blZHLkgM9VujcmVlplIetfqISWBZroMM1V5QDeS4lvUrwABNVYyNhGaZIwAAAABJRU5ErkJggg%3D%3D") right 0 no-repeat !important;
-  padding: 0 22px 0 0 !important;
-  margin-right: 3px;
-  border-bottom: 1px solid #e8e8e8 ;
+background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARRQTFRF6urqysrK+/v7tMYCtcoB7Ozs7e3t4eHh7u7u/fz3/Pz85+/xtckP6O2rtMgF091q1NTU8fHx9fn64Ozs8PDw5+6HzMzMy8vLvc8j9vjg0eXmz9tb5ubm2traJXt60NxW39/f9fjl5+fn4ODguswY0dHR+vru/fvu6fC8wc8x6enpsc/Pfq2nmr6iwtM1vdAn9/z4DGVzUpOZxthI1+Bz3umxHnh25vfvxNdApczLwNIwDWdw7/TM3ueMK3+BPYWEz9wb6/C6t8sRm8HEOIWLfK+ywNjatcy8ytlMrcUA8PS56eqM8/f21NsTqsnM4+mhRpKS6+vr8vLy9/f3+Pj49vb29PT0+vr68/Pz+fn59fX1AGZmw3bEdAAAASxJREFUeNpc0dVihDAURdFbHMbdXevu7i6EJJDw///RwMwwtOvlcDdvAJLECKV8iVLCJAkk7BHM3CWGiYddYIi4/xHEgBQx+8NkDBcJ5Lx4nG5t74uhOdB4LI9f5GRGLNfA5ljIH38E851OH/TEchsg7E8PP/cY11bls1pwchDdEQptv11w3uXkpRmcUXfWfX+jdyOfjJ2ok8Cpv7tZUu5S4UFEt8OeuPKvDz9fG+a826IL+Uf//LmkDFOLjzTvX0f+3s6bomTinVKaqNcTdNKRq7c0tOgz06TSibrqRSYZeZiaPapgAI1eXFTTDVMsXTMA6dz7j+sInOaAeyjO44OmAy7Ss10t9n+1blZHLkgM9VujcmVlplIetfqISWBZroMM1V5QDeS4lvUrwABNVYyNhGaZIwAAAABJRU5ErkJggg==") right 0 no-repeat !important;
+padding: 0 22px 0 0 !important;
+margin-right: 3px;
+border-bottom: 1px solid #e8e8e8 ;
 }
-{CODE}
 
-!!Layout
-Meist muss man die aber selbst erstellen
-{CODE()}
-ol { list-style-image: url(data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs%3D); }
-{CODE}
-
-{CODE()}
-.pfeilreichtsblack { list-style-image: url(data:image/gif;base64,R0lGODlhAwAFAIABAAAAAP///yH5BAEKAAEALAAAAAADAAUAAAIFRG4YlgUAOw==); }
-.pfeilreichtswhite { list-style-image: url(data:image/gif;base64,R0lGODlhAwAFAIAAAP///////yH5BAEKAAEALAAAAAADAAUAAAIFRG4YlgUAOw==); }
-{CODE}
-
-
-
-
-
-Den Regenbogenhintergrund für ((howto:text2form|text2form))
-{CODE()}
-textarea {
-background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAD9CAIAAADyJ4q8AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sEAxYRMD6zgxwAAAB+SURBVCjP5dGhCsJQHIXxjyOsm82aFjTYrfdZ7wP82QuICwMFQZiwoKwJwrhpybBXOM1w6o8DHzln7dNXgGXXWAvgXRqbeYlJAJ/ycJmr4+EkQPMu2X5WfQigexWbObSL2fQ+c7qFAKXtaDPjuVnMevaZ90oAZex85nn49+4/KOo0UPGBuVAAAAAASUVORK5CYII%3D") repeat scroll 0 0 white;
-}
-{CODE}
-
-!!!legacy
-ein transparentes gif 1x1 aka blank.gif oder spacer.gif, sofern man das noch einsetzten muss
-{CODE()}
-data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D
-{CODE}
