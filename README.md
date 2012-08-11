@@ -15,6 +15,7 @@ Just copy these classes to your css and remove what you don't want
 Do you have improvements, just write me or pullrequest.
 This version is english, like css. But I think of language translations.
 
+[demo](http://klml.github.com/usefulclassroomphrases/)
 
 ## special
 
