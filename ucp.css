@@ -9,20 +9,26 @@ a:hover {
 }
 img { border:none; }
 ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs'); }
-h1,h2,h3,h4,h5,h6{padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{padding:0; margin:30px 0 0 0;}
 h1{color:#000; font-size: 130%; }
 h2{color:#000; font-size: 120%; }
 h3{color:#000; font-size: 115%; }
 h4{color:#000; font-size: 110%; }
 h5{color:#000; font-size: 105%; }
 h6{color:#000; font-size: 105%; }
+h1+h2 {margin-top: 2px;}
+h2+h3 {margin-top: 2px;}
+h3+h4 {margin-top: 2px;}
+h4+h5 {margin-top: 2px;}
+h5+h6 {margin-top: 2px;}
+
 p {margin: 0 0 10px 0;}
 hr {color:#000;background-color:#000;height:1px;margin: 0 0 2px 0;}
 td{vertical-align: text-top;}
 input, textarea, select { width: 350px; }
 textarea { height: 200px; }
 /* proportion */
-#panel {margin: 0 auto; width: 956px;background-color:#fff;} /* middled fixed width */
+#panel {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
 
 /* useful class-room phrases */
 .clear,
@@ -32,6 +38,7 @@ textarea { height: 200px; }
 .none { float: none !important;}
 img.left { float:left;margin:0 5px 5px 0;}
 img.right { float:right;margin:0 5px 0 5px;}
+.block { display: block;}
 .depot, /* is for htmlsnippets moved and used by JS */
 .hidden { display: none; }
 .alerta, .notice {color:red;text-transform:uppercase;}
