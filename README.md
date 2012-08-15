@@ -46,11 +46,11 @@ margin:0 11px 11px 0;
 
 
 ## payload
-Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons.
+Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons. [demo](http://klml.github.com/usefulclassroomphrases/payload.html)
 
-Also nice [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and use sprites.
+Also nice is [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of courese [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
 
-[demo](http://klml.github.com/usefulclassroomphrases/payload.html)
+
 
 ## licence
 
