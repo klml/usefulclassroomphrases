@@ -7,7 +7,7 @@ a {
 }
 a:hover {
 }
-img { border:none; }
+img { border: 0; }
 ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs'); }
 h1,h2,h3,h4,h5,h6{padding:0; margin:30px 0 0 0;}
 h1{color:#000; font-size: 130%; }
