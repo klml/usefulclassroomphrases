@@ -1,14 +1,12 @@
 # useful class-room phrases
 
 useful css class-room phrases is a small selection for css classes used inside content areas.
-To have some self-explanatory and self-describable classes you can use writng text and reading.
+Some self-explanatory and self-describable classes writing and understand your source.
 Instead of writing ```style="float:right;margin:0 5px 0 5px;"``` every time.
 
-Its only useful **not-general elements**, not for general templating.
+Its only useful for **not-general elements**, not general templating.
 
 Its a little bit against sense of CSS, but not so much against it than others;)
-
-In addition to [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
 
 Just copy these classes to your css and remove what you don't want
 
@@ -24,7 +22,7 @@ This version is english, like css. But I think of language translations.
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
 * **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
 
-### not usefeful
+### not useful
 
 **Not** class-room phrases are if you put paddings and margins.....?
 
@@ -48,9 +46,15 @@ margin:0 11px 11px 0;
 ## payload
 Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons. [demo](http://klml.github.com/usefulclassroomphrases/payload.html)
 
-Also nice is [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of courese [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
+## additional
 
+Please dont use this files directly, just copy and paste what you need. Most classes are written very simple ('right' instead of 'usr_right') for easier use.
 
+* always use [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
+* for icons you also could use [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
+* and please use [minify](http://code.google.com/p/minify/) 
+
+and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
 
 ## licence
 
