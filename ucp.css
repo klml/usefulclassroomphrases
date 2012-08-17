@@ -42,5 +42,5 @@ img.right { float:right;margin:0 5px 0 5px;}
 .depot, /* is for htmlsnippets moved and used by JS */
 .hidden { display: none; }
 .alerta, .notice {color:red;text-transform:uppercase;}
-.row2 dl dt {float: left;font-weight: bold;width: 150px;} /* 2-column  .row2 is above if you use not changable markup like markdown etc */
-.row2 dl dd {margin-bottom: 5px !important;}
+.row2 dl dt {float: left;font-weight: bold;width: 150px;} /* 2-column for key value lists .row2 is above if you use not changable sections like markdown-lists */
+.row2 dl dd {margin: 0 0 5px 160px !important;}
