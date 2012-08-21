@@ -19,6 +19,8 @@ This version is english, like css. But I think of language translations.
 
 * **ul**: has no list-style but a bullet image
 * **panel**: is for middled fixed width websites
+* **lead**: blogs, news, most pages have [Lead paragraph](http://en.wikipedia.org/wiki/Lead_paragraph)
+* **thx**, **alerta**, **notice**: small warning notices. Style this for sour needs. For additional function like close 'x' use [Kickstrap alerts](http://ajkochanowicz.github.com/Kickstrap/javascript.html#alerts)
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
 * **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
 
@@ -26,7 +28,7 @@ This version is english, like css. But I think of language translations.
 
 **Not** class-room phrases are if you put paddings and margins.....?
 
-## overwrite
+### overwrite
 
 I think its ok to change this few values and not to overwrite them. But you could *mark* changed parts with break in new lines
 
@@ -42,7 +44,6 @@ margin:0 11px 11px 0;
 }
 ```
 
-
 ## payload
 Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons. [demo](http://klml.github.com/usefulclassroomphrases/payload.html)
 
@@ -51,13 +52,14 @@ Is an set if base64 icons. Please dont use the whole list, but just copy&paste s
 Please dont use this files directly, just copy and paste what you need. Most classes are written very simple ('right' instead of 'usr_right') for easier use.
 
 * always use [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
-* for icons you also could use [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
+* in most projects [Kickstrap](http://ajkochanowicz.github.com/Kickstrap/) is useful
+** for icons you also could use [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
 * and please use [minify](http://code.google.com/p/minify/) 
 
 and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
 
 ## licence
 
-There is no threshold of originality of this stuff, if not aeverything is under Public Domain.
+There is no threshold of originality of this stuff, if not everything is under Public Domain.
 
 This means you can copy, modify, use it, resell it, even without naming this source (but it would be usful;)

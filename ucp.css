@@ -29,6 +29,7 @@ input, textarea, select { width: 350px; }
 textarea { height: 200px; }
 /* proportion */
 #panel {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
+.lead {font-size: 110%;background-color:#F6F6F6;}
 
 /* useful class-room phrases */
 .clear,
@@ -41,6 +42,6 @@ img.right { float:right;margin:0 0 5px 5px;}
 .block { display: block;}
 .depot, /* is for htmlsnippets moved and used by JS */
 .hidden { display: none; }
-#thx, .alerta, .notice { border: 3px solid #8da7cc; border-left-width: 20px;color: green;font-size: 150%;padding: 10px;}
+.thx, .alerta, .notice { border: 1px solid #8da7cc; border-left-width: 20px;color: green;font-size: 130%;padding: 5px;} 
 .row2 dl dt {float: left;font-weight: bold;width: 150px;} /* 2-column for key value lists .row2 is above if you use not changable sections like markdown-lists */
 .row2 dl dd {margin: 0 0 5px 160px !important;}
