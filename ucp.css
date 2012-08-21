@@ -37,7 +37,7 @@ textarea { height: 200px; }
 .right { float:right;}
 .none { float: none !important;}
 img.left { float:left;margin:0 5px 5px 0;}
-img.right { float:right;margin:0 5px 0 5px;}
+img.right { float:right;margin:0 0 5px 5px;}
 .block { display: block;}
 .depot, /* is for htmlsnippets moved and used by JS */
 .hidden { display: none; }
