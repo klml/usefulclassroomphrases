@@ -28,7 +28,7 @@ td{vertical-align: text-top;}
 input, textarea, select { width: 350px; }
 textarea { height: 200px; }
 /* proportion */
-#panel {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
+#panel, #wrapper {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
 .lead {font-size: 110%;background-color:#F6F6F6;}
 
 /* useful class-room phrases */
