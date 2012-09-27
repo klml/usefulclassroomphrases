@@ -41,6 +41,10 @@ padding-right:13px
 a[href ^="mailto:"] { background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF////////iIqF9vb26urpycfDvb275eXj2djV+/v4srKy6efio6GcqKejsa6q8fDtVM9qIQAAAAF0Uk5TAEDm2GYAAABOSURBVHheBcExDkAwGIDRL43NpJOt6a9hMdVilP8gklqsHMJmt4qeyeI03oNSNkCrAIU/7YTWbwp0zz4rTXZHxF/9YA15HTG4+4NFRNofUBMMOBBNZngAAAAASUVORK5CYII=") center right no-repeat;
 padding-right:13px
 }
+a[href ^="tel:"] {
+background:url("http://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Combine_de_telephone.gif/10px-Combine_de_telephone.gif") center right no-repeat;
+padding-right:13px
+}
 a[href ^="news://"]{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHtJREFUeF6NkEEKgCAQRT2w1wiiUxgk0SKiTe6i9oKeQXDhKSZmYAJRKeHh4j//DIp+6OAPJH6cXJRSZqSUQClViBjUKER8zXAbUhev+6Q7hMA0G1msNtIo5zxhrX3xzlNG4ravYMwBMUZsKsBsXjQIABCTHlsfTXuj8wCN3T2QBjtcwQAAAABJRU5ErkJggg==") center right no-repeat;
 padding-right:13px
 }
