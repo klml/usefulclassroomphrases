@@ -25,10 +25,12 @@ h5+h6 {margin-top: 2px;}
 p {margin: 0 0 10px 0;}
 hr {color:#000;background-color:#000;height:1px;margin: 0 0 2px 0;}
 td{vertical-align: text-top;}
-input, textarea, select { width: 350px; }
+input, textarea { width: 350px; }
+select { width: 356px; }
 textarea { height: 200px; }
 /* proportion */
 #panel {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
+.half {width: 49.5%;padding: 0;border-width:0;} /* no border, 49.5% wont work*/
 .lead {font-size: 110%;background-color:#F6F6F6;}
 
 /* useful class-room phrases */
