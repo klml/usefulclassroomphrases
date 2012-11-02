@@ -1,7 +1,7 @@
 $(document).ready(function() {
   hashspliter(window.location.hash);
   
-  $('.demo a[href^="#"]').click(function() {
+  $('.demo a[href^="#"]').click(function() { // .demo is only not to colet with hashspliter
         hashtagger(this.hash);
     });
   $('a[href^="#"]').click(function() {

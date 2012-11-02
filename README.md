@@ -18,7 +18,7 @@ This version is english, like css. But I think of language translations.
 
 [demo](http://klml.github.com/usefulclassroomphrases/)
 
-## special
+## special css
 
 * **ul**: has no list-style but a bullet image
 * **panel**: is for middled fixed width websites
@@ -52,6 +52,11 @@ margin:0 11px 11px 0;
 Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons. Its easier than uploading and linking images [demo](http://klml.github.com/usefulclassroomphrases/payload.html)
 
 For cool icons use [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
+
+## jquery
+
+hashtagger and hashspliter use the href hashtag to display areas or allocate a html-GET-like string to values. they wont work togehter
+
 
 ## additional
 
