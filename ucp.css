@@ -35,6 +35,8 @@ textarea { height: 200px; }
 /* useful class-room phrases */
 .clear,
 .cb { clear:both; }
+.cl { clear:left; }
+.cr { clear:right; }
 .left { float:left;}
 .right { float:right;}
 .none { float: none !important;}
