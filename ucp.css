@@ -40,7 +40,9 @@ textarea { height: 200px; }
 .left { float:left;}
 .right { float:right;}
 .none { float: none !important;}
+img[src$='#left'], /* use blind hash as workaround if class can't set, eg markdown etc */
 img.left { float:left;margin:0 5px 5px 0;}
+img[src$='#right'],
 img.right { float:right;margin:0 0 5px 5px;}
 .block { display: block;}
 .depot, /* is for htmlsnippets moved and used by JS */
