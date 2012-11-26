@@ -3,11 +3,14 @@ $(document).ready(function() {
   
   $('.demo a[href^="#"]').click(function() { // .demo is only not to colet with hashspliter
         hashtagger(this.hash);
-    });
+  });
   $('a[href^="#"]').click(function() {
         hashspliter(this.hash);
-    });
-    
+  });
+  $(window).bind('hashchange', function() {
+		    hashspliter(window.location.hash);
+	});
+
 });
  
 function hashtagger (hash) {
