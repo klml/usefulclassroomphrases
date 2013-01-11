@@ -61,7 +61,8 @@ hashtagger and hashspliter use the href hashtag to display areas or allocate a h
 ## additional
 
 * always use [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
-* in most projects [Kickstrap](http://ajkochanowicz.github.com/Kickstrap/)
+* [Skeleton](http://www.getskeleton.com/) is also a lightwight CSS and html framework (simple than boot or [kickstrap](http://ajkochanowicz.github.com/Kickstrap/))
+
 * and please use [minify](http://code.google.com/p/minify/) 
 
 and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
