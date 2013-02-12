@@ -16,7 +16,8 @@ $(document).ready(function() {
 function hashtagger (hash) {
   // poor mans tab
     $('.hashtagger > div').hide();
-    $(hash).show(); 
+    $(hash).show();
+    $("#accordion, .accordion").accordion("activate", hash);
   // special actions
     switch (hash) {
   case "#contact": // example
