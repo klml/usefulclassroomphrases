@@ -51,7 +51,7 @@ margin:0 11px 11px 0;
 ## payload
 Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons. Its easier than uploading and linking images [demo](http://klml.github.com/usefulclassroomphrases/payload.html)
 
-For cool icons use [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
+For cool icons use [weloveiconfonts.com](http://weloveiconfonts.com/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
 
 ## jquery
 
