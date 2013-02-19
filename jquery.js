@@ -1,39 +1,33 @@
 $(document).ready(function() {
-  hashspliter(window.location.hash);
-  
-  $('.demo a[href^="#"]').click(function() { // .demo is only not to colet with hashspliter
-        hashtagger(this.hash);
-  });
-  $('a[href^="#"]').click(function() {
-        hashspliter(this.hash);
-  });
-  $(window).bind('hashchange', function() {
-		    hashspliter(window.location.hash);
-	});
-
+    hashtagger(window.location.hash);
+    $(window).bind('hashchange', function() {
+        hashtagger(window.location.hash);
+    });
 });
- 
+
 function hashtagger (hash) {
-  // poor mans tab
+    //hashspliter: prefill "GET parameter"-like value string to inputs
+    var gets = hash.slice('1').split('&') ;
+    if (gets.length != 1) {
+        for (var i = 0; i < gets.length; i++) {
+            var getkeyparam = gets[i].split('=')
+            $('#' + getkeyparam[0]).val( getkeyparam[1] )
+        }
+        return
+    }
+    // poor mans tab
     $('.hashtagger > div').hide();
     $(hash).show();
-    $("#accordion, .accordion").accordion("activate", hash);
-  // special actions
+    // $("#accordion, .accordion").accordion("activate", hash); // use with jQuery UI Accordion
+    // special actions
     switch (hash) {
-  case "#contact": // example
-    alert('fork me at github/klml')
-    break;
-  default:
-  case "#":
+        case "#alert": // example
+            alert('fork me at github.com/klml/usefulclassroomphrases')
+        break;
+        default:
+        case "#":
 
-    break;
+        break;
     }
-}
-function hashspliter (hash) { // prefill "GET parameter"-like value string to inputs
-    var gets = hash.slice('1').split('&') ;
 
-    for (var i = 0; i < gets.length; i++) {
-        var getkeyparam = gets[i].split('=')
-        $('#' + getkeyparam[0]).val( getkeyparam[1] )
-    }
 }
