@@ -1,0 +1,112 @@
+/* generic icons */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+
+a:after {
+    font-family: 'FontAwesome';
+    margin-left: 3px;
+}
+a:hover:after {
+    color: red ;
+}
+a.external:after,
+a[href^="http://"]:after {
+   content: "";
+}
+.entypo-key:before,
+a[href^="https://"]:after {
+    font-family: "entypo";
+    content: "🔑";
+}
+
+.entypo-mail:before,
+a[href^="mailto:"]:after {
+    font-family: "entypo";
+    content: "✉";
+}
+.entypo-right-dir:before,
+a[title="more"]:after {
+    font-family: "entypo";
+    content: "▸";
+}
+/* remove not used */
+.fontawesome-rss:before,
+a[href$="/feed/"]:after, /* for wordpress */
+a[href$="atom"]:after, /* mediawiki etc */
+/* a[href$="xml"]:after, /* xml feeds, */
+a[href$="rss.xml"]:after,
+a[href$=".rss"]:after {
+    content: "";
+}
+/* docs to download */
+.entypo-download:before,
+a[href$=".pdf"]:after, a[href$=".PDF"]:after,
+a[href*=".pdf#"]:after, a[href*=".PDF#"]:after,
+a[href*=".pdf?"]:after, a[href*=".PDF?"]:after {
+    font-family: "entypo";
+    content: "📥";
+}
+.fontawesome-phone:before,
+a[href ^="tel:"]:after {
+    content: "";
+}
+.fontawesome-music:before,
+a[href$=".ogg"]:after, a[href$=".OGG"]:after,
+a[href$=".mid"]:after, a[href$=".MID"]:after,
+a[href$=".midi"]:after, a[href$=".MIDI"]:after,
+a[href$=".mp3"]:after, a[href$=".MP3"]:after,
+a[href$=".wav"]:after, a[href$=".WAV"]:after,
+a[href$=".wma"]:after, a[href$=".WMA"]:after {
+    content: "";
+}
+
+.fontawesome-facetime-video:before,
+a[href$=".ogm"]:after, a[href$=".OGM"]:after,
+a[href$=".avi"]:after, a[href$=".AVI"]:after,
+a[href$=".mpeg"]:after, a[href$=".MPEG"]:after,
+a[href$=".mpg"]:after, a[href$=".MPG"]:after {
+    content: "";
+}
+.zocial-wikipedia:before,
+a[href*=".wikipedia.org"]:after {
+    font-family: 'zocial' !important;
+    content: "," !important; 
+}
+.fontawesome-facebook-sign:before,
+a[href^="http://www.facebook.com"]:after {
+    content: "";
+}
+.fontawesome-twitter-sign:before,
+a[href^="https://twitter.com"]:after {
+    font-family: 'FontAwesome';
+    content: "";
+}
+.entypo-linkedin:before,
+a[href^="https://www.linkedin.com"]:after {
+    font-family: "entypo";
+    content: "";
+}
+.zocial-xing:before,
+a[href^="https://www.xing.com"]:after {
+    font-family: 'zocial';
+    content: "X";
+}
+
+#upheader a:after,
+#copy a:after,
+.fontnone:before,
+.fontnone:after {
+    content: none !important;
+}
+
+/* specials */
+.arrowleft:before {
+    font-family: 'FontAwesome';
+    margin-right: 3px;
+    content: "";
+}
+.arrowright:after {
+    font-family: 'FontAwesome';
+    margin-left: 3px;
+    content: "";
+}
