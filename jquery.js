@@ -18,7 +18,8 @@ function hashtagger (hash) {
     // poor mans tab
     $('.hashtagger > div').hide();
     $(hash).show();
-    // $("#accordion, .accordion").accordion("activate", hash); // use with jQuery UI Accordion
+    $(hash).click(); // to use with jQuery UI Accordion etc
+
     // special actions
     switch (hash) {
         case "#alert": // example
