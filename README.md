@@ -49,9 +49,11 @@ margin:0 11px 11px 0;
 ```
 
 ## payload
-Is an set if base64 icons. Please dont use the whole list, but just copy&paste single icons. Its easier than uploading and linking images [demo](http://klml.github.com/usefulclassroomphrases/payload.html)
 
-For cool icons use [weloveiconfonts.com](http://weloveiconfonts.com/) and of course [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
+* selection for css-icons for hyperlinks with <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data URI</a> (base64): [payload demo](http://klml.github.com/usefulclassroomphrases/payload.html)
+* selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks demo](http://klml.github.com/usefulclassroomphrases/weloveiconfonts-hyperlinks.html)
+
+And use [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
 
 ## jquery
 
