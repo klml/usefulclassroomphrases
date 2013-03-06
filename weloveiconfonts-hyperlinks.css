@@ -91,13 +91,19 @@ a[href^="https://www.xing.com"]:after {
     font-family: 'zocial';
     content: "X";
 }
+a[href*="action=edit"]:after,
+a[href*="do=edit"]:after,
+.fontawesome-edit:before {
+    font-family: 'FontAwesome';
+    content: "";
+}
 
-#upheader a:after,
-#copy a:after,
 .fontnone:before,
 .fontnone:after {
     content: none !important;
 }
+
+
 
 /* specials */
 .arrowleft:before {
