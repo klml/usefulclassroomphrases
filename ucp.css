@@ -33,6 +33,7 @@ textarea { height: 200px; }
 .lead {font-size: 110%;background-color:#F6F6F6;}
 
 /* useful class-room phrases */
+.poor-accordion { display: none; }
 .clear,
 .cb { clear:both; }
 .cl { clear:left; }
