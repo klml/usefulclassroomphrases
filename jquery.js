@@ -3,7 +3,23 @@ $(document).ready(function() {
     $(window).bind('hashchange', function() {
         hashtagger(window.location.hash);
     });
+    
+    pooraccordeon();
 });
+
+function poorAccordion(animate) {
+    animate = typeof animate !== 'undefined' ? animate : true;
+    jQuery('.poor-accordion').prev()
+        .css('cursor', 'pointer')
+        .click(function() {
+            if (true == animate) {
+                jQuery(this).next().slideToggle();
+            } else {
+                jQuery(this).next().toggle();
+            }
+        }
+    );
+}
 
 function hashtagger (hash) {
     //hashspliter: prefill "GET parameter"-like value string to inputs
