@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 function pooraccordion(animate) {
     animate = typeof animate !== 'undefined' ? animate : true;
-    jQuery('.poor-accordion').prev()
+    jQuery('.poor-accordion').hide().prev()
         .css('cursor', 'pointer')
         .click(function() {
             if (true == animate) {

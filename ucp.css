@@ -46,7 +46,7 @@ img[src$='#right'],
 img.right { float:right;margin:0 0 5px 5px;}
 .block { display: block;}
 .depot, /* is for htmlsnippets moved and used by JS */
-.hidden, .poor-accordion { display: none; }
+.hidden { display: none; }
 .thx, .alerta, .notice { border: 1px solid #8da7cc; border-left-width: 20px;color: green;font-size: 130%;padding: 5px;} 
 .row2 dl dt {clear: both; float: left; font-weight: bold; width: 20%;} /* 2-column for key value lists .row2 is above if you use not changable sections like markdown-lists */
 .row2 dl dd {float: right; width: 78%; margin-left: 0}
