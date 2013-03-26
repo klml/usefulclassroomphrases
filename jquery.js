@@ -4,10 +4,10 @@ $(document).ready(function() {
         hashtagger(window.location.hash);
     });
     
-    pooraccordeon();
+    pooraccordion();
 });
 
-function poorAccordion(animate) {
+function pooraccordion(animate) {
     animate = typeof animate !== 'undefined' ? animate : true;
     jQuery('.poor-accordion').prev()
         .css('cursor', 'pointer')
