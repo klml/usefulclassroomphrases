@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
     hashtagger(window.location.hash, '.firstactive');
     $(window).bind('hashchange', function() {
         hashtagger(window.location.hash);
@@ -20,7 +20,7 @@ function pooraccordion(animate) {
     );
 }
 
-function hashtagger (hash, exeption) {
+function hashtagger (hash, exception) {
     //hashspliter: prefill "GET parameter"-like value string to inputs
     var gets = hash.slice('1').split('&') ;
     if (gets.length != 1) {
@@ -31,9 +31,9 @@ function hashtagger (hash, exeption) {
         return
     }
     // poor mans tab
-    $('.hashtagger > div, .hashtabber').not( exeption ).hide();
-    $(hash).show();
-    $(hash).click(); // to use with jQuery UI Accordion etc
+    jQuery('.hashtagger > div, .hashtabber').not( exception ).hide();
+    jQuery(hash).show();
+    jQuery(hash).click(); // to use with jQuery UI Accordion etc
 
     // special actions
     switch (hash) {
