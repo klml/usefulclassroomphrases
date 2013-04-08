@@ -49,6 +49,9 @@ a[href ^="tel:"]:after,
 .fontawesome-phone:before {
     content: "";
 }
+a[href^="tel:"] {
+    cursor: auto;
+}
 a[href$=".ogg"]:after, a[href$=".OGG"]:after,
 a[href$=".mid"]:after, a[href$=".MID"]:after,
 a[href$=".midi"]:after, a[href$=".MIDI"]:after,
