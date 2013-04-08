@@ -26,7 +26,7 @@ function hashtagger (hash, exception) {
     if (gets.indexOf('=') > -1) {
         for (var i = 0; i < gets.length; i++) {
             var getkeyparam = gets[i].split('=');
-            $('#' + getkeyparam[0]).val( getkeyparam[1] );
+            jQuery('#' + getkeyparam[0]).val( getkeyparam[1] );
         }
     } else {
         // poor mans tab
