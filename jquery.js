@@ -23,10 +23,12 @@ function pooraccordion(animate) {
 function hashtagger (hash, exception) {
     //hashspliter: prefill "GET parameter"-like value string to inputs
     var gets = hash.slice('1').split('&');
-    if (gets.indexOf('=') > -1) {
+    if ( gets.length > 1) {
         for (var i = 0; i < gets.length; i++) {
             var getkeyparam = gets[i].split('=');
-            jQuery('#' + getkeyparam[0]).val( getkeyparam[1] );
+
+            jQuery('#' + getkeyparam[0]).val( getkeyparam[1] ); // TODO varabler gesteltane
+
         }
     } else {
         // poor mans tab
@@ -46,3 +48,6 @@ function hashtagger (hash, exception) {
         }
     }    
 }
+
+
+
