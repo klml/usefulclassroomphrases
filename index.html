@@ -6,6 +6,7 @@
  <title>useful classroom phrases - example</title>
  <style>/*only for visual perception */
  .block {background-color: gray;padding: 10px;}
+ .hashtagger { height: 170px; }
  </style>
 </head>
 
@@ -14,6 +15,7 @@
     <div id="panel">
         <h1>Heading 1</h1>
         <p class="lead">A <a href="http://en.wikipedia.org/wiki/Lead_paragraph">Lead paragraph</a> in literature refers to the opening paragraph of an article, essay, news story or book chapter. Often called just "the lead," it usually occurs together with the headline or title. It precedes the main body of the article, and it gives the reader the main idea of the story. The word "lead" is pronounced to rhyme with "need". <code>class="lead"</code></p>
+        <p class="lead">A second Lead paragraph in literature refers to the opening paragraph of an article, essay, news story or book chapter. Often called just "the lead," it usually occurs together with the headline or title. It precedes the main body of the article, and it gives the reader the main idea of the story. The word "lead" is pronounced to rhyme with "need".</p>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed </p>
         <h2>Heading 2</h2>
         <p class="half left"><code>half left</code> text: dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna</p>
@@ -77,39 +79,36 @@
         </form>
 
 
-        <h2>hashtagger</h2>
+        <h2>single hashtagger</h2>
         <div>
-            <a href="#loremhashtagger">Lorem</a>
-            <a href="#wortbergenhashtagger">Wortbergen</a>
-            <a href="#lingueshashtagger">lingues</a>
-            <a href="#alerthashtagger">Alert</a>
-
+            <p>Show <a href="#loremipsum">#loremipsum</a>, <a href="#wortbergen">#wortbergen</a> or <a href="#lingues">#ingues</a>; or just trigger an event like <a href="#alert">#alert</a>. Or show the 2 items and on checkbox <a href="#loremipsum/checkbox_yes/lingues">#loremipsum/checkbox_yes/lingues</a>.</p>
+            
+            
             <div class="hashtagger">
-                <div id="loremhashtagger"><b>Lorem</b> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-                <div id="wortbergenhashtagger" class="firstactive">Weit hinten, hinter den <b>Wortbergen</b>, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</div>
-                <div id="lingueshashtagger">Li Europan <b>lingues</b> es membres del sam familie. Lor separat existentie es un myth.</div>
+                <p id="loremipsum" class="lead" ><b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p id="wortbergen" class="firstactive lead">Weit hinten, hinter den <b>Wortbergen</b>, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</p>
+                <p id="lingues" class="lead" >Li Europan <b>lingues</b> es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
+            <form>
+                <input type='checkbox' id="checkbox_yes" value="yes"> checkbox
+            </form>
         </div>
-        <h2>hashtabber</h2>
-        <div>
-            <a href="#loremhashtabber">Lorem</a>
-            <a href="#wortbergenhashtabber">Wortbergen</a>
-            <a href="#lingueshashtabber">lingues</a>
+        
 
-            <div id="loremhashtabber" class="hashtabber firstactive"><b>Lorem</b> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-            <div id="wortbergenhashtabber" class="hashtabber">Weit hinten, hinter den <b>Wortbergen</b>, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</div>
-            <div id="lingueshashtabber" class="hashtabber">Li Europan <b>lingues</b> es membres del sam familie. Lor separat existentie es un myth.</div>
 
-        </div>
-        <h2>hashspliter</h2>
+        <h2>hashgetter</h2>
         <div>
-            <a href="#name=bob&city=springfield&color=green">link to #name=bob&city=springfield&color=green</a>
+            link to <a href="#name=bob&city=springfield&color=green">#name=bob&city=springfield&color=green</a> with hash2form.
             <form>
                 <input id="name" /><br />
                 <input id="city" /><br />
                 <input id="color" />
             </form>
         </div>
+        
+        
+        
+        
         <h2>poor-accordion</h2>
         <div>
             <h3>Lorem</h3>
