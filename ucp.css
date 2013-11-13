@@ -8,8 +8,10 @@
 .left { float:left;}
 .right { float:right;}
 .none { float: none !important;}
+.marginleft,
 img[src$='#left'], /* use blind hash as workaround if class can't set, eg markdown etc */
 img.left { float:left;margin:0 5px 5px 0;}
+.marginright,
 img[src$='#right'],
 img.right { float:right;margin:0 0 5px 5px;}
 .block { display: block;}
