@@ -18,59 +18,49 @@ This version is english, like css. But I think of language translations.
 
 [demo](http://klml.github.com/usefulclassroomphrases/)
 
-## special css
+
+## ucp.css
+
+Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). Special are:
+
+* **lead**: blogs, news, most pages have [Lead paragraph](http://en.wikipedia.org/wiki/Lead_paragraph)
+* **thx**, **alerta**, **notice**: small warning notices. Style this for sour needs. For additional function like close 'x' use [Kickstrap alerts](http://ajkochanowicz.github.com/Kickstrap/javascript.html#alerts)
+* **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
+* **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
+
+## example.local.css
+[example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
 
 * **ul**: has no list-style but a bullet image
 * **panel**: is for middled fixed width websites
-* **lead**: blogs, news, most pages have [Lead paragraph](http://en.wikipedia.org/wiki/Lead_paragraph)
-* **half**: for infoboxes etc be careful with borders, padding and margins.
-* **thx**, **alerta**, **notice**: small warning notices. Style this for sour needs. For additional function like close 'x' use [Kickstrap alerts](http://ajkochanowicz.github.com/Kickstrap/javascript.html#alerts)
-* **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
-* **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
+* **half**: for infoboxes etc be careful with borders, padding and margins. Only if you use no grid like [kickstrap](http://ajkochanowicz.github.com/Kickstrap/) or [Skeleton](http://www.getskeleton.com/).
 
-### not useful
 
-**Not** class-room phrases are if you put paddings and margins.....?
+## icons
 
-### overwrite
+* selection for css-icons for hyperlinks with Data URI (base64): payload demo
+* selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks](http://klml.github.io/usefulclassroomphrases/#weloveiconfonts)
 
-I think its ok to change this few values and not to overwrite them. But you could *mark* changed parts with break in new lines
-
-Original
-``` css
-img.left { float:left;margin:0 5px 5px 0;}
-```
-
-Changed
-``` css
-img.left { float:left;
-margin:0 11px 11px 0;
-}
-```
-
-## payload
-
-* selection for css-icons for hyperlinks with <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data URI</a> (base64): [payload demo](http://klml.github.com/usefulclassroomphrases/payload.html)
-* selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks demo](http://klml.github.com/usefulclassroomphrases/weloveiconfonts-hyperlinks.html)
-
-And use [sprites](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS).
 
 ## jquery
 
 hashtagger and hashspliter use the href hashtag to display areas or allocate a html-GET-like string to values. they wont work togehter
 
+* hashtagger
+* hashgetter
+* hash2form
+* poor-accordion
+* imgspread
 
 ## additional
 
 * always use [CSS-Mini-Reset](https://github.com/vladocar/CSS-Mini-Reset) or [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
-* [Skeleton](http://www.getskeleton.com/) is also a lightwight CSS and html framework (simple than boot or [kickstrap](http://ajkochanowicz.github.com/Kickstrap/))
-
 * and please use [minify](http://code.google.com/p/minify/) 
 
 and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
 
 ## licence
 
-There is no threshold of originality of this stuff, if not everything is under Public Domain.
+There is no threshold of originality of this stuff, so everything is under Public Domain.
 
-This means you can copy, modify, use it, resell it, even without naming this source (but it would be usful;)
+This means you can copy, modify, use it, sell it, even without naming this source (but it would be useful;)
