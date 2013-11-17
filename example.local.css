@@ -6,9 +6,12 @@ body { font:normal 12px Arial, Helvetica; background: repeat-x top left #F6F6F6 
 a { text-decoration: none; color: #8da7cc; }
 a:hover { text-decoration: underline; }
 a:visited { color: #B3CDF2; }
+a:active, /* set class "active" for current pages*/
+a.active { color: #2E6465; }
+
 
 img { border: 0; }
-ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs'); }
+ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs'); margin-left: 15px;}
 
 p {margin: 0 0 10px 0;}
 hr {color:#000;background-color:#000;height:1px;margin: 0 0 2px 0;}
@@ -20,6 +23,7 @@ textarea { height: 200px; }
 /* from usefulclassroomphrases */
 .lead {font-size: 110%;background-color:#F6F6F6;}
 
+/* headings*/
 h1,h2,h3,h4,h5,h6{padding:0; margin:30px 0 0 0;}
 h1{color:#000; font-size: 130%; }
 h2{color:#000; font-size: 120%; border-bottom: 1px solid gray;}
@@ -40,3 +44,12 @@ h5+h6 {margin-top: 2px;}
 #panel,#wrapper {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
 .half {width: 49.5%;padding: 0;border-width:0;} /* no border, 49.5% wont work*/
 
+
+
+/* #Media Queries
+================================================== */
+ 
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}

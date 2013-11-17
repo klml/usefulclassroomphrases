@@ -19,6 +19,7 @@ This version is english, like css. But I think of language translations.
 [demo](http://klml.github.com/usefulclassroomphrases/)
 
 
+
 ## ucp.css
 
 Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). Special are:
@@ -27,6 +28,11 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **thx**, **alerta**, **notice**: small warning notices. Style this for sour needs. For additional function like close 'x' use [Kickstrap alerts](http://ajkochanowicz.github.com/Kickstrap/javascript.html#alerts)
 * **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
+
+´
+   <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/ucp.css">
+
+´
 
 ## example.local.css
 [example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
@@ -41,6 +47,11 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * selection for css-icons for hyperlinks with Data URI (base64): payload demo
 * selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks](http://klml.github.io/usefulclassroomphrases/#weloveiconfonts)
 
+´
+   <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/weloveiconfonts-hyperlinks.css">
+
+´
+
 
 ## jquery
 
@@ -51,6 +62,12 @@ hashtagger and hashspliter use the href hashtag to display areas or allocate a h
 * hash2form
 * poor-accordion
 * imgspread
+
+´
+    <script src="usefulclassroomphrases/jquery.js"></script>
+
+´
+
 
 ## additional
 
