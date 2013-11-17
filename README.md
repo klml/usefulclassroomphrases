@@ -11,14 +11,9 @@ Just copy these classes to your css and remove what you don't want
 
 Please dont use this files directly, just copy and paste what you need. 
 
-Most classes are written very 
-
-Do you have improvements, just write me or pullrequest.
-This version is english, like css. But I think of language translations.
+Do you have improvements, just write me or send pullrequest.
 
 [demo](http://klml.github.com/usefulclassroomphrases/)
-
-
 
 ## ucp.css
 
@@ -29,10 +24,9 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
 
-´
+```css
    <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/ucp.css">
-
-´
+```
 
 ## example.local.css
 [example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
@@ -47,26 +41,33 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * selection for css-icons for hyperlinks with Data URI (base64): payload demo
 * selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks](http://klml.github.io/usefulclassroomphrases/#weloveiconfonts)
 
-´
+```css
    <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/weloveiconfonts-hyperlinks.css">
-
-´
-
+```
 
 ## jquery
 
-hashtagger and hashspliter use the href hashtag to display areas or allocate a html-GET-like string to values. they wont work togehter
+hashtagger and hashspliter use the href hashtag to display areas or allocate a html-GET-like string to values.
 
-* hashtagger
-* hashgetter
-* hash2form
-* poor-accordion
-* imgspread
-
-´
+```css
     <script src="usefulclassroomphrases/jquery.js"></script>
+```
 
-´
+
+### hashtagger
+
+
+### hashgetter
+Fills key value like getparameter to forms. Key is the id and value the valeu of the form (e.g. *#name=bob&city=springfield&color=green* fills *<input id="name" value="bob" />*)
+
+
+### poor-accordion
+
+
+### imgspread
+
+
+
 
 
 ## additional
@@ -75,6 +76,13 @@ hashtagger and hashspliter use the href hashtag to display areas or allocate a h
 * and please use [minify](http://code.google.com/p/minify/) 
 
 and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
+
+## todo
+
+* split hashgetter and hash2form
+
+### hash2form
+
 
 ## licence
 
