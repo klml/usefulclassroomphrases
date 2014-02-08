@@ -79,8 +79,7 @@ function hashrouter (hash, exception) {
             default:
             case "#":
                 // poor mans tab
-                //~ jQuery('.hashtagger > div, .hashtabber').not( exception ).hide();
-                jQuery(hash).siblings().not( exception ).hide();
+                jQuery('.hashtagger > div, .hashtabber').not( exception ).hide();
                 jQuery(hash).show().click(); // click to use with jQuery UI Accordion etc
             break;
         }
