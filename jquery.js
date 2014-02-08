@@ -50,9 +50,7 @@ function hashrouter (hash, exception) {
         }
     } else if ( hash.indexOf('/') !== -1 ) { // #loremipsum/lingues
         var pseudodirs = hash.slice('1').split('/') ;
-        
 
-        
         for (var i = 0; i < pseudodirs.length; i++) {
             var htmlid = '#' + pseudodirs[i] ;
             var tagName =  jQuery( htmlid ).prop('tagName'); // check type of html element
@@ -62,7 +60,6 @@ function hashrouter (hash, exception) {
             switch ( tagName ) {
                 case 'INPUT' :
                     $( htmlid ).attr("checked", true);
-                    console.log(htmlid)
                 break
                 case 'P' :
                 case 'DIV' :
@@ -90,9 +87,7 @@ function hashrouter (hash, exception) {
     }    
 }
 
-
 function hash2form ( getkeyparam ) {
-                //~ console.log( getkeyparam );
     jQuery('#' + getkeyparam[0]).val( getkeyparam[1] ); // TODO varabler gesteltane
 }
 
