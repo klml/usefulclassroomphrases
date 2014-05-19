@@ -1,17 +1,11 @@
 # useful class-room phrases
 
-useful css class-room phrases is a small selection for css and jQuery classes used inside content areas.
+useful css class-room phrases is a small selection for css classes used inside content areas.
 Some simple worded, self-explanatory and self-describable classes writing and understand your source.
 Instead of writing ```style="float:right;margin:0 5px 0 5px;"``` every time.
 
-Its only useful for **not-general elements**, its no useful for general templating.
-So its a little bit against sense of CSS, but not so much against it than others;)
+Most front end frameworks have similar elements, like [foundation utility-classes](http://foundation.zurb.com/docs/utility-classes.html) or [HTML KickStart extras](http://www.99lime.com/elements/#extras).
 
-Just copy these classes to your css and remove what you don't want
-
-Please dont use this files directly, just copy and paste what you need. 
-
-Do you have improvements, just write me or send pullrequest.
 
 [demo](http://klml.github.com/usefulclassroomphrases/)
 
@@ -44,13 +38,6 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 ```css
    <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/weloveiconfonts-hyperlinks.css">
 ```
-
-## additional
-
-* always use [CSS-Mini-Reset](https://github.com/vladocar/CSS-Mini-Reset) or [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
-* and please use [minify](http://code.google.com/p/minify/) 
-
-and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
 
 ## licence
 
