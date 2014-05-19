@@ -47,27 +47,8 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 
 ## jquery
 
-hashtagger and hashspliter use the href hashtag to display areas or allocate a html-GET-like string to values.
-
-```css
-    <script src="usefulclassroomphrases/jquery.js"></script>
-```
-
-
-### hashtagger
-
-
-### hashgetter
-Fills key value like getparameter to forms. Key is the id and value the valeu of the form (e.g. *#name=bob&city=springfield&color=green* fills *<input id="name" value="bob" />*)
-
-
-### poor-accordion
-
 
 ### imgspread
-
-
-
 
 
 ## additional
@@ -76,13 +57,6 @@ Fills key value like getparameter to forms. Key is the id and value the valeu of
 * and please use [minify](http://code.google.com/p/minify/) 
 
 and many other [performance rules](http://developer.yahoo.com/performance/rules.html/)
-
-## todo
-
-* split hashgetter and hash2form
-
-### hash2form
-
 
 ## licence
 
