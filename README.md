@@ -38,9 +38,3 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 ```css
    <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/weloveiconfonts-hyperlinks.css">
 ```
-
-## licence
-
-There is no threshold of originality of this stuff, so everything is under Public Domain.
-
-This means you can copy, modify, use it, sell it, even without naming this source (but it would be useful;)
