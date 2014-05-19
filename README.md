@@ -45,12 +45,6 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
    <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/weloveiconfonts-hyperlinks.css">
 ```
 
-## jquery
-
-
-### imgspread
-
-
 ## additional
 
 * always use [CSS-Mini-Reset](https://github.com/vladocar/CSS-Mini-Reset) or [Eric Meyer reset-css](http://meyerweb.com/eric/tools/css/reset/)
