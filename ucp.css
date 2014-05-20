@@ -23,7 +23,7 @@ img.right { float:right;margin:0 0 5px 5px;}
 
 /* 2-column for key value lists .row2 is above if you use not changable sections like markdown-lists */
 .row2 dl dt {font-weight: bold;}
-@media only print, only screen and (min-width: 480px) {
+@media only print, only screen and (min-width: 680px) {
     .row2 dl dt {clear: both; float: left; width: 25%;}
     .row2 dl dd {float: right; width: 75%; margin-left: 0}
 }
