@@ -8,6 +8,7 @@ a:hover { text-decoration: underline; }
 a:visited { color: #B3CDF2; }
 a:active, /* set class "active" for current pages*/
 a.active { color: #2E6465; }
+a[href^="#"] { font-style: italic; } /* anchor links staying on the current page */
 a[href^="http"]:after { color: #000; content: "⇭"; font-size: 16px; padding-left: 2px;} /* external links */
 
 img { border: 0; }
