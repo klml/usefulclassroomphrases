@@ -19,7 +19,7 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **row2**: to have a not html-tabled 2-column table with an definiton list. This class is above the dl if you use not changable markup like markdown etc
 
 ```css
-   <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/ucp.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/v1.1/ucp.css">
 ```
 
 ## example.local.css
@@ -36,5 +36,5 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks](http://klml.github.io/usefulclassroomphrases/#weloveiconfonts)
 
 ```css
-   <link rel="stylesheet" type="text/css" href="usefulclassroomphrases/weloveiconfonts-hyperlinks.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/v1.1/weloveiconfonts-hyperlinks.css">
 ```
