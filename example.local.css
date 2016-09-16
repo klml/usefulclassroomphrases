@@ -44,7 +44,7 @@ h5+h6 {margin-top: 2px;}
 /* if you use no grid like bootstrap, skelton */
 
 /* middled fixed width, from http://bettermotherfuckingwebsite.com/ */
-#panel,.panel,#wrapper,.wrapper {margin:40px auto;padding:0 10px;max-width:650px;}
+#panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:650px;}
 
 .half {width: 49.5%;padding: 0;border-width:0;} /* no border, 49.5% wont work*/
 
