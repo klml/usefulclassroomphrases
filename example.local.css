@@ -2,7 +2,7 @@
 /* often used and cutomized css values needs to be changed in 98% */
 
 
-body { font:normal 12px Arial, Helvetica; background: repeat-x top left #F6F6F6 ;margin: 0; padding: 0; outline: none;}
+body { font:normal 12px Arial, Helvetica; background: repeat-x top left #F6F6F6 ;margin: 0; padding: 0; outline: none;line-height:1.6;}
 a { text-decoration: none; color: #8da7cc; }
 a:hover { text-decoration: underline; }
 a:visited { color: #B3CDF2; }
