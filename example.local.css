@@ -43,7 +43,7 @@ h5+h6 {margin-top: 2px;}
 /* proportion */
 /* if you use no grid like bootstrap, skelton */
 
-#panel,#wrapper {margin: 0 auto;padding: 0 10px;width: 956px;background-color:#fff;} /* middled fixed width */
+#panel,.panel,#wrapper,.wrapper {margin: 0 auto;padding: 0 10px;width: 956px;} /* middled fixed width */
 .half {width: 49.5%;padding: 0;border-width:0;} /* no border, 49.5% wont work*/
 
 
