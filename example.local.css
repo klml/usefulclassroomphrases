@@ -17,7 +17,7 @@ a:visited { color: #B3CDF2; }
 a:active, /* set class "active" for current pages*/
 a.active { color: #2E6465; }
 a[href^="#"] { font-style: italic; } /* anchor links staying on the current page */
-a[href^="http"]:after { color: #000; content: "⇭"; font-size: 16px; padding-left: 2px;} /* external links */
+a[href^="http"]:after { color: #000; content: "➚"; font-size: 16px; padding-left: 2px;} /* external links */
 
 img { border: 0; }
 ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs'); margin-left: 15px;}
