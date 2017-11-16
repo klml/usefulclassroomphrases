@@ -2,10 +2,8 @@
 /* often used and cutomized css values needs to be changed in 98% */
 
 /* proportion */
-/* if you use no grid like bootstrap, skelton */
-body { font:normal 12px Arial, Helvetica; background: repeat-x top left #F6F6F6 ;margin: 0; padding: 0; outline: none;line-height:1.6;}
+body { font:normal 18px Arial, Helvetica; color:#444; background-color: #EEEEEE ;margin: 0; padding: 0; outline: none;line-height:1.6;}
 
-/* middled fixed width, from http://bettermotherfuckingwebsite.com/ */
 #panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:650px;}
 
 .half {width: 49.5%;padding: 0;border-width:0;} /* no border, 49.5% wont work*/
@@ -51,7 +49,7 @@ h5+h6 {margin-top: 2px;}
 /* # standard Media Queries
 ================================================== */
  
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
+/* Smaller than standard 650 (devices and browsers) */
+@media only screen and (max-width: 649px) {
 
 }

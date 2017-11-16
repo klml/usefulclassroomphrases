@@ -30,6 +30,9 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **half**: for infoboxes etc be careful with borders, padding and margins. Only if you use no grid like [kickstrap](http://ajkochanowicz.github.com/Kickstrap/) or [Skeleton](http://www.getskeleton.com/).
 
 
+Colors, sizes are inspired be [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
+
+
 ## icons
 
 * selection for css-icons for hyperlinks with Data URI (base64): payload demo
