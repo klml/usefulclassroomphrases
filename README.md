@@ -25,8 +25,8 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 ## example.local.css
 [example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
 
+* **panel**: content width fixed in the middled. You can use #panel, .panel, #wrapper or .wrapper, even direct in your body tag. 
 * **ul**: has no list-style but a bullet image
-* **panel**: is for middled fixed width websites
 
 
 Colors, sizes are inspired be [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
