@@ -19,7 +19,7 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **row2**: to have a not html-tabled 2-column table to markup semantic pairs, using a [definition Lists](https://www.w3.org/MarkUp/html3/deflists.html). This classes must be around the dl.
 
 ```css
-   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/v1.1/ucp.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/v1.3/ucp.css">
 ```
 
 ## example.local.css
@@ -39,5 +39,5 @@ Colors, sizes are inspired be [bettermotherfuckingwebsite.com](http://bettermoth
 * selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks](http://klml.github.io/usefulclassroomphrases/#weloveiconfonts)
 
 ```css
-   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/v1.1/weloveiconfonts-hyperlinks.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/v1.3/weloveiconfonts-hyperlinks.css">
 ```
