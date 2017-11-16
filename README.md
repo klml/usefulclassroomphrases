@@ -27,7 +27,6 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 
 * **ul**: has no list-style but a bullet image
 * **panel**: is for middled fixed width websites
-* **half**: for infoboxes etc be careful with borders, padding and margins. Only if you use no grid like [kickstrap](http://ajkochanowicz.github.com/Kickstrap/) or [Skeleton](http://www.getskeleton.com/).
 
 
 Colors, sizes are inspired be [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
