@@ -6,8 +6,6 @@ body { font:normal 18px Arial, Helvetica; color:#444; background-color: #EEEEEE 
 
 #panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:650px;}
 
-.half {width: 49.5%;padding: 0;border-width:0;} /* no border, 49.5% wont work*/
-
 /* content */
 a { text-decoration: none; color: #8da7cc; }
 a:hover { text-decoration: underline; }
