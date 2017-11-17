@@ -29,7 +29,7 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **ul**: has no list-style but a bullet image
 
 
-Colors, sizes are inspired be [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
+Colors, sizes and contrast are inspired by [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
 
 
 ## icons
