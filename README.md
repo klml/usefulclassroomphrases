@@ -4,10 +4,10 @@ useful css class-room phrases is a small selection for css classes used inside c
 Some simple worded, self-explanatory and self-describable classes writing and understand your source.
 Instead of writing ```style="float:right;margin:0 5px 0 5px;"``` every time.
 
-Most front end frameworks have similar elements, like [foundation utility-classes](http://foundation.zurb.com/docs/utility-classes.html) or [HTML KickStart extras](http://www.99lime.com/elements/#extras).
+Most front end frameworks have similar elements, like [foundation utility-classes](https://foundation.zurb.com/sites/docs/v/5.5.3/utility-classes.html) or [HTML KickStart extras](http://www.99lime.com/elements/#extras).
 
 
-[demo](http://klml.github.com/usefulclassroomphrases/)
+[demo](https://klml.github.io/usefulclassroomphrases/)
 
 ## ucp.css
 
@@ -23,13 +23,21 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 ```
 
 ## example.local.css
+
+
+Browser agent steht ist gut aber besser : link j Teen externe, auf Seite, https muss nicht mehr. Visite. Hover ein Detail ändern, ci ins Logo und nicht in die Schatten
+
 [example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
 
-* **panel**: content width fixed in the middled. You can use #panel, .panel, #wrapper or .wrapper, even direct in your body tag. 
+* **panel**: content width fixed in the middled. You can use #panel, .panel, #wrapper or .wrapper. Set this declaration direct in your body tag, or if you want elemten (like [panorama images](https://klml.github.io/usefulclassroomphrases/#panoramabackground)) over the whole page width.
+
+
+
+
 * **ul**: has no list-style but a bullet image
 
 
-Colors, sizes and contrast are inspired by [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
+Colors, sizes and contrasts inspired by [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
 
 
 ## icons
