@@ -12,7 +12,7 @@ a:visited { color: #6A5ACD; }
 a:hover { text-decoration: none; }
 a:active, /* set class "active" for current pages*/
 a.active { color: #2E6465; }
-a[href^="#"] { font-style: italic; } /* anchor links staying on the current page */
+a[href^="#"] { color: inherit; } /* anchor links staying on the current page */
 a[href^="//"]:after,
 a[href^="http"]:after { color: #000; content: "➚"; font-size: 16px; padding-left: 2px;} /* external links */
 
