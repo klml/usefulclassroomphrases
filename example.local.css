@@ -7,7 +7,7 @@ body { font:normal 18px Arial, Helvetica; color:#444; background-color: #EEEEEE 
 #panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:950px;}
 
 /* content */
-a { text-decoration: underline; color: #0645ad; }
+a { text-decoration: underline; color: #0000ee; }
 a:visited { color: #6A5ACD; }
 a:hover { text-decoration: none; }
 a:active, /* set class "active" for current pages*/
