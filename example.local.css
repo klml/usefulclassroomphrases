@@ -22,7 +22,8 @@ ul { list-style:none; list-style-image: url('data:image/gif;base64,R0lGODlhBQANA
 p {margin: 0 0 10px 0;}
 hr {color:#000;background-color:#000;height:1px;margin: 0 0 2px 0;}
 td{vertical-align: text-top;}
-input, textarea { width: 350px; }
+
+input[type='text'], input[type='email'], input[type='tel'], textarea { width: 350px; }
 select { width: 356px; }
 textarea { height: 200px; }
 
