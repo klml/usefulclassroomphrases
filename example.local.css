@@ -27,7 +27,7 @@ input[type='text'], input[type='email'], input[type='tel'], textarea { width: 35
 select { width: 356px; }
 textarea { height: 200px; }
 
-/* from usefulclassroomphrases */
+/* special areas */
 .lead {font-size: 110%;background-color:#F6F6F6;}
 .border {border: 1px solid gray;}
 
