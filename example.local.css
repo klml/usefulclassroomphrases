@@ -55,11 +55,7 @@ h5+h6 {margin-top: 2px;}
 }
 
 
-
-
-
-/* # standard Media Queries
-================================================== */
+/* # standard Media Queries */
  
 /* Smaller than standard 950 (devices and browsers) */
 @media only screen and (max-width: 949px) {
