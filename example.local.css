@@ -11,7 +11,7 @@ body { font:normal 18px Arial, Helvetica; color:#444; background-color: #ccc ;ma
 
 /* content */
 a { text-decoration: underline; color: #0000ee; }
-a:visited { color: #6A5ACD; }
+a:visited { font-style: italic ; }
 a:hover { text-decoration: none; }
 a:active, /* set class "active" for current pages*/
 a.active { color: #2E6465; }
