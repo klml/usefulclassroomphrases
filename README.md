@@ -26,9 +26,7 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 
 [example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
 
-* **panel**: content width fixed in the middled. You can use #panel, .panel, #wrapper or .wrapper. Set this declaration direct in your body tag, or if you want elemten (like [panorama images](https://klml.github.io/usefulclassroomphrases/#panoramabackground)) over the whole page width.
-
-
+* **panel**: centered content. You can use #panel, .panel, #wrapper or .wrapper. Set this declaration direct in your body tag, or if you want  elements over the whole page width(like [panorama images](https://klml.github.io/usefulclassroomphrases/#panoramabackground)), in any wrapper elements.
 
 
 * **ul**: has no list-style but a bullet image
