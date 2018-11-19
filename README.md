@@ -38,8 +38,3 @@ Colors, sizes and contrasts inspired by [bettermotherfuckingwebsite.com](http://
 ## icons
 
 * selection for css-icons for hyperlinks with Data URI (base64): payload demo
-* selection of [weloveiconfonts.com](http://weloveiconfonts.com/) for hyperlinks: [weloveiconfonts-hyperlinks](http://klml.github.io/usefulclassroomphrases/#weloveiconfonts)
-
-```css
-   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/master/weloveiconfonts-hyperlinks.css">
-```
