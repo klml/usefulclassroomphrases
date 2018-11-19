@@ -5,6 +5,7 @@
 body { font:normal 18px Arial, Helvetica; color:#444; background-color: #EEEEEE ;margin: 0; padding: 0; outline: none;line-height:1.6;}
 
 #panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:950px;}
+.paneloutbreak { display: flex; align-items: center; justify-content: center; }
 
 /* content */
 a { text-decoration: underline; color: #0000ee; }
