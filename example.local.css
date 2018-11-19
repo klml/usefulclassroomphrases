@@ -3,7 +3,7 @@
 
 /* proportion */
 body { font:normal 18px Arial, Helvetica; color:#444; background-color: #ccc ;margin: 0; padding: 0; outline: none;line-height:1.6;}
-#main { background-color: #eee; padding: 3px 10px; }
+.main { background-color: #eee; padding: 3px 10px; }
 
 
 #panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:950px;}
