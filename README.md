@@ -26,6 +26,8 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 
 [example.local.css](example.local.css) is a example for local.css with common used classes you have to customze (link color)
 
+* **main** is the _main_ content area, it should have another background-color than the whole body and you _can_ this combine with **panel** .
+
 * **panel**: centered content. You can use #panel, .panel, #wrapper or .wrapper. Set this declaration direct in your body tag, or if you want  elements over the whole page width(like [panorama images](https://klml.github.io/usefulclassroomphrases/#panoramabackground)), in any wrapper elements.
   * **paneloutbreak** allows elements in panels to burst out.
 
