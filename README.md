@@ -30,7 +30,13 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * ```.panel``` (alias ```#panel```, ```#wrapper``` or ```.wrapper```): centered content. Set this declaration direct in your body tag, or if you want  elements over the whole page width(like [panorama images](https://klml.github.io/usefulclassroomphrases/#panoramabackground)), in any wrapper elements.
   * ```paneloutbreak``` allows elements in panels to burst out.
 * ```ul```: has no list-style but a bullet image
-
+* ```a```: there are diffrent kinds of hyperlinks:
+  * ```a```: used on _site-internal_ links (```/impressum```)
+  * ```a:visited```: [Browsers limits the styles that can be set for a:visited links to all kind of colors, due to security issues.](https://www.w3schools.com/cssref/sel_visited.asp). This example uses ```color: inherit;``` to reduce the accentuation and newness for already visited links
+  * ```a:hover```: hover
+  * ```a:active```: and class ```a.active```, useful to identify links to current pages (menus, sidebars etc)
+  * ```a[href^="#"]```: for anchor-links staying on the current page (```#footer```)
+  * ```a[href^="//"]``` and ```a[href^="http"]```: for site external links (```https://example.com```)
 
 Colors, sizes and contrasts inspired by [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
 
