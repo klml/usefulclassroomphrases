@@ -19,7 +19,7 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
 * **row2**: to have a not html-tabled 2-column table to markup semantic pairs, using a [definition Lists](https://www.w3.org/MarkUp/html3/deflists.html). This classes must be around the dl.
 
 ```css
-   <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/klml/usefulclassroomphrases/master/ucp.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/klml/usefulclassroomphrases@master/ucp.css">
 ```
 
 ## example.local.css
