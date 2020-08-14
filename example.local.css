@@ -6,7 +6,7 @@ body { font:normal 18px Arial, Helvetica; color:#444; background-color: #ccc ;ma
 .main { background-color: #eee; padding: 3px 10px; }
 
 
-#panel,.panel,#wrapper,.wrapper {margin:5px auto;padding:0 10px;max-width:950px;}
+.panel {margin:5px auto;padding:0 10px;max-width:950px;}
 .paneloutbreak { display: flex; align-items: center; justify-content: center; }
 
 /* content */
