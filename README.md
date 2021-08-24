@@ -11,12 +11,10 @@ Most front end frameworks have similar elements, like [foundation utility-classe
 
 ## ucp.css
 
-Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). Special are:
+Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none).
 
-* **lead**: blogs, news, most pages have [Lead paragraph](http://en.wikipedia.org/wiki/Lead_paragraph)
-* **thx**, **alerta**, **notice**: small warning notices. Style this for sour needs. For additional function like close 'x' use [Kickstrap alerts](http://ajkochanowicz.github.com/Kickstrap/javascript.html#alerts)
-* **depot**: parking depot for htmlsnippets moved and used by JS like 'thank you' messages. On load these are not displayed, but appear with some JS interaction
-* **row2**: to have a not html-tabled 2-column table to markup semantic pairs, using a [definition Lists](https://www.w3.org/MarkUp/html3/deflists.html). This classes must be around the dl.
+Only **row2** is special:
+to have a not html-tabled 2-column table to markup semantic pairs, using a [definition Lists](https://www.w3.org/MarkUp/html3/deflists.html). This classes must be around the dl.
 
 ```css
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/klml/usefulclassroomphrases@master/ucp.css">
@@ -37,6 +35,7 @@ Most classes in [ucp.css](ucp.css) are selfdescribing (e.g. clear, left, none). 
   * ```a:active```: and class ```a.active```, useful to identify links to current pages (menus, sidebars etc)
   * ```a[href^="#"]```: for anchor-links staying on the current page (```#footer```)
   * ```a[href^="//"]``` and ```a[href^="http"]```: for site external links (```https://example.com```)
+* **lead**: blogs, news, most pages have [Lead paragraph](http://en.wikipedia.org/wiki/Lead_paragraph)
 
 Colors, sizes and contrasts inspired by [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
 
